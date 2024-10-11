@@ -18,9 +18,9 @@
     let meses = anos * 12;
     let parcela = valorImovel / meses;
     if (parcela > salario * 0.3) {
-        alert(`Infelizmente não foi possível realizar o financiamento.`);
+        document.write(`Infelizmente não foi possível realizar o financiamento.`);
     } else {
-        alert(`Parabéns! O valor da parcela ficou R$${parcela.toFixed(2).replace(".", ",")}.`);
+        document.write(`Parabéns! O valor da parcela ficou R$${parcela.toFixed(2).replace(".", ",")}.`);
     }
 
     // feito

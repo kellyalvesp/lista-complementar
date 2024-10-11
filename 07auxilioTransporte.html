@@ -17,11 +17,10 @@
     const veiculoProprio = prompt(`Você utiliza veículo próprio para ir ao trabalho:`);
 
     //PROCESSAMENTO
-    let novoSalario
+    let novoSalario;
     if (auxilio == "Sim" || veiculoProprio == "Sim") {
         desconto = salario * 0.06;
         novoSalario = salario - desconto;
-        alert(`Desconto: R$${desconto}.`);
     } else if (veiculoProprio == "Sim") {
         novoSalario = salario + 200;
     } else {
@@ -29,7 +28,7 @@
     }
     
     //SAÍDA
-    alert(`Novo salário: R$${novoSalario}.`);
+    document.write(`Desconto: R$${desconto}. <br> Novo salário: R$${novoSalario}.`);
 
     // feito
 </script>
